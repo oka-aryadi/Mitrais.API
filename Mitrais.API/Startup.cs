@@ -31,8 +31,19 @@ namespace Mitrais.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                    });
+            });
             services.AddDbContextPool<DataContext>(opts => opts.UseSqlServer(_configuration.GetConnectionString("conn")));
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IGenderService, GenderService>();
 
             var mappingConfig = new MapperConfiguration(mc =>
             {
@@ -55,6 +66,7 @@ namespace Mitrais.API
             }
 
             app.UseRouting();
+            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {
