@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mitrais.API", "Mitrais.API\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mitrais.Data", "Mitrais.Data\Mitrais.Data.csproj", "{90DF7A40-7CC3-4EB0-B256-1CA38880686F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mitrais.Interface", "Mitrais.Interface\Mitrais.Interface.csproj", "{593E37D5-35CE-4EEB-82FF-C88A988C06F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mitrais.Interface", "Mitrais.Interface\Mitrais.Interface.csproj", "{593E37D5-35CE-4EEB-82FF-C88A988C06F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mitrais.Service", "Mitrais.Service\Mitrais.Service.csproj", "{1093CB93-CA35-49C4-84E4-53E4507B80EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mitrais.Service", "Mitrais.Service\Mitrais.Service.csproj", "{1093CB93-CA35-49C4-84E4-53E4507B80EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mitrais.API.Tests", "Mitrais.API.Tests\Mitrais.API.Tests.csproj", "{21F9586E-3F8F-4C91-BD3D-096C019103CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1093CB93-CA35-49C4-84E4-53E4507B80EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1093CB93-CA35-49C4-84E4-53E4507B80EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1093CB93-CA35-49C4-84E4-53E4507B80EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F9586E-3F8F-4C91-BD3D-096C019103CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F9586E-3F8F-4C91-BD3D-096C019103CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F9586E-3F8F-4C91-BD3D-096C019103CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F9586E-3F8F-4C91-BD3D-096C019103CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
