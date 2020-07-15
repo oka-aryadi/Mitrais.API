@@ -11,15 +11,7 @@ namespace Mitrais.Data.Attribute
         {
             long number;
             var stringValue = value.ToString();
-            if(stringValue.Length < 10)
-            {
-                return false;
-            }
-            else if(stringValue.Substring(0, 3) != "+62")
-            {
-                return false;
-            }
-            else if(!long.TryParse(stringValue.Substring(3), out number))
+            if(stringValue.Length < 10 || stringValue.Substring(0, 3) != "+62" || !long.TryParse(stringValue.Substring(3), out number))
             {
                 return false;
             }

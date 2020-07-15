@@ -67,7 +67,7 @@ namespace Mitrais.API
 
             app.UseRouting();
             app.UseCors();
-
+ 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
